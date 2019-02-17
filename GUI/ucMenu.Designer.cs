@@ -33,7 +33,7 @@
             this.btnHuongDan = new MetroFramework.Controls.MetroTile();
             this.TK_TraLuong = new MetroFramework.Controls.MetroTile();
             this.btnTraLuong = new MetroFramework.Controls.MetroTile();
-            this.btnLamThem = new MetroFramework.Controls.MetroTile();
+            this.btnTangCa = new MetroFramework.Controls.MetroTile();
             this.btnPhongBan = new MetroFramework.Controls.MetroTile();
             this.btnPhanCong = new MetroFramework.Controls.MetroTile();
             this.btnThanNhan = new MetroFramework.Controls.MetroTile();
@@ -66,7 +66,7 @@
             this.metroPanel1.Controls.Add(this.btnHuongDan);
             this.metroPanel1.Controls.Add(this.TK_TraLuong);
             this.metroPanel1.Controls.Add(this.btnTraLuong);
-            this.metroPanel1.Controls.Add(this.btnLamThem);
+            this.metroPanel1.Controls.Add(this.btnTangCa);
             this.metroPanel1.Controls.Add(this.btnPhongBan);
             this.metroPanel1.Controls.Add(this.btnPhanCong);
             this.metroPanel1.Controls.Add(this.btnThanNhan);
@@ -148,28 +148,30 @@
             this.btnTraLuong.UseCustomForeColor = true;
             this.btnTraLuong.UseSelectable = true;
             this.btnTraLuong.UseTileImage = true;
+            this.btnTraLuong.Click += new System.EventHandler(this.btn_Click);
             // 
-            // btnLamThem
+            // btnTangCa
             // 
-            this.btnLamThem.ActiveControl = null;
-            this.btnLamThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnLamThem.ForeColor = System.Drawing.Color.White;
-            this.btnLamThem.Location = new System.Drawing.Point(315, 451);
-            this.btnLamThem.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLamThem.Name = "btnLamThem";
-            this.btnLamThem.Size = new System.Drawing.Size(246, 164);
-            this.btnLamThem.TabIndex = 3;
-            this.btnLamThem.Tag = "ucLamThem";
-            this.btnLamThem.Text = "Làm tăng ca";
-            this.btnLamThem.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnLamThem.TileImage = global::QL_NhanSu.Properties.Resources.icon_relogio;
-            this.btnLamThem.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLamThem.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.btnLamThem.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.btnLamThem.UseCustomBackColor = true;
-            this.btnLamThem.UseCustomForeColor = true;
-            this.btnLamThem.UseSelectable = true;
-            this.btnLamThem.UseTileImage = true;
+            this.btnTangCa.ActiveControl = null;
+            this.btnTangCa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnTangCa.ForeColor = System.Drawing.Color.White;
+            this.btnTangCa.Location = new System.Drawing.Point(315, 451);
+            this.btnTangCa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTangCa.Name = "btnTangCa";
+            this.btnTangCa.Size = new System.Drawing.Size(246, 164);
+            this.btnTangCa.TabIndex = 3;
+            this.btnTangCa.Tag = "ucTangCa";
+            this.btnTangCa.Text = "Làm tăng ca";
+            this.btnTangCa.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnTangCa.TileImage = global::QL_NhanSu.Properties.Resources.icon_relogio;
+            this.btnTangCa.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTangCa.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.btnTangCa.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.btnTangCa.UseCustomBackColor = true;
+            this.btnTangCa.UseCustomForeColor = true;
+            this.btnTangCa.UseSelectable = true;
+            this.btnTangCa.UseTileImage = true;
+            this.btnTangCa.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnPhongBan
             // 
@@ -308,7 +310,7 @@
         private MetroFramework.Controls.MetroTile btnThanNhan;
         private MetroFramework.Controls.MetroTile btnDuAn;
         private MetroFramework.Controls.MetroTile btnNhanVien;
-        private MetroFramework.Controls.MetroTile btnLamThem;
+        private MetroFramework.Controls.MetroTile btnTangCa;
         private MetroFramework.Controls.MetroTile btnTraLuong;
         private MetroFramework.Controls.MetroTile TK_TraLuong;
         private MetroFramework.Controls.MetroTile btnHuongDan;

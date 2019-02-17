@@ -16,5 +16,17 @@ namespace QL_NhanSu.GUI
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            ucMenu ucMenu = new ucMenu();
+            ucMenu.Dock = DockStyle.Fill;
+            frmMain.FrmMain.MetroContainer.Controls.Add(ucMenu);
+            frmMain.FrmMain.MetroContainer.Controls["ucMenu"].BringToFront();
+            foreach (ucNhanVien uc in frmMain.FrmMain.MetroContainer.Controls.OfType<ucNhanVien>())
+            {
+                frmMain.FrmMain.MetroContainer.Controls.Remove(uc);
+            }
+        }
     }
 }
