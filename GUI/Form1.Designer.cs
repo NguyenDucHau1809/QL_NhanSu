@@ -52,6 +52,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(967, 480);
             this.Controls.Add(this.mPanelMain);
+            this.MaximizeBox = false;
             this.Name = "frmMain";
             this.Text = "Chương trình quản lý nhân sự";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
